@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  padding-bottom: 80px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    backdrop-filter: blur(16px);
+    background: linear-gradient(135deg, #9a28b111, #ff3c9a0c, #ff7f2913);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+.header .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Brand */
+.brand {
+    font-weight: 900;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #053154;
+    text-decoration: none;
+    text-underline-offset: 4px;
+    font-family: 'Segoe UI', sans-serif;
+    user-select: none;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff3f8;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    background: rgba(249, 199, 223, 0.347);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #da1b64;
+}
+::-webkit-scrollbar-thumb {
+    background: #598fd6;
+    border-radius: 4px;
+}
+
+.hero {
+  background-image: url('pantai\ aceh.jpg'); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.913);
+  padding: 90px 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  background: card;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(33, 33, 33, 0.553);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 22px;
+  color: #018156;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 19px;
+  margin: 10px 0;
+  color: #010d14;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #02538a;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  position: fixed; 
+  bottom: 0;       
+  left: 0;         
+  width: 100%;     
+  backdrop-filter: blur(16px);
+  background: linear-gradient(135deg, #9a28b100, #ff3c9a0c, #ff7f2913);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.658);
+  padding: 4px 0px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  height: 65px;
+}

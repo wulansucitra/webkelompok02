@@ -1,0 +1,166 @@
+/* Reset dasar */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 29px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #ffe0ec;
+}
+::-webkit-scrollbar-thumb {
+    background: #598fd6;
+    border-radius: 4px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100vw;
+    backdrop-filter: blur(16px);
+    background: linear-gradient(135deg, #9a28b100, #ff3c9a00, #ff7f2900);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 900;
+    font-size: 26px;
+    color: #053154; 
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    user-select: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff3f8;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    background: rgba(249, 199, 223, 0.347);
+}
+.overlay {
+  background: url('pantai aceh.jpg') no-repeat center center/cover;
+  color: #ffffff;
+  padding: 80px;
+  text-align: center;
+
+}
+
+
+/* Hero section */
+.hero-section .overlay {
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1em;
+}
+
+/* Content sections */
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 10%;
+  background: #fff;
+  gap: 30px;
+}
+
+.text-block {
+  flex: 1 1 45%;
+}
+
+.image-block {
+  flex: 1 1 45%;
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Link */
+a {
+color: #01034d;
+text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-spacer {
+  height: 80px;
+}
+
+footer {
+  position: fixed; /* Tempel di bawah layar */
+  bottom: 0;       /* Tempatkan di bagian bawah */
+  left: 0;         /* Mulai dari kiri */
+  width: 100%;     /* Penuhi lebar layar */
+  backdrop-filter: blur(16px);
+  background: linear-gradient(135deg, #9a28b100, #ff3c9a0c, #ff7f2913);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.658);
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
